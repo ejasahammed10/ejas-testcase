@@ -1,0 +1,76 @@
+.beinex-service{
+    padding: $spacer-6 $spacer-0;
+    background-color: $color-white-1;
+    &__head{
+        font-size: 30px;
+        color: $color-blue-2;
+        font-weight: $font-semi-bold;
+        margin-bottom: $spacer-4;
+        text-align: center;
+    }
+    &__text{
+        color: #999;
+        font-size: 16px;
+        margin-bottom: $spacer-3;
+        text-align: center;
+    }
+    &__outer{
+        margin: $spacer-0 -16px;
+        display: flex;
+    }
+    
+    .beinex-tile-service{
+        width: calc(50% - 32px);
+        margin: $spacer-3;
+    }
+    &__img-sec{
+        width: calc(25% - 32px);
+        display: flex;
+        justify-content: space-between;
+        margin: $spacer-3;
+        overflow: hidden;
+        &:hover{
+            .beinex-service__img{
+                transform: scale(1.05);
+            }
+            
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        transition: 0.3s all;
+    }
+}
+
+@include mobile-tablet{
+    .beinex-service{
+        padding: $spacer-4 0;
+        &__outer{
+            flex-wrap: wrap;
+            &--secnd{
+                flex-wrap: wrap-reverse;
+            }
+        }
+        .beinex-tile-service{
+            width: calc(100% - 32px);
+            margin: $spacer-3;
+        }
+        &__img-sec{
+            width: calc(50% - 32px); 
+        }
+    }
+    
+}
+
+@include mobile{
+    .beinex-service{
+        &__img-sec{
+            width: calc(100% - 32px); 
+            margin: $spacer-2 $spacer-3;
+        }
+        .beinex-tile-service{
+            margin: $spacer-2 $spacer-3;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.beinex-banner{
+    position: relative;
+    height: 550px;
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        font-family: "object-fit: cover; object-position: center;";
+        display: block;
+    }
+    &__img-wrapper{
+        position: absolute;
+        width: 100%;
+        height: 550px;
+    }
+    .content-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+    &__content {
+        margin-right: $spacer-0;
+        max-width: 630px;
+        align-items: flex-start;
+        margin: auto 0;
+        text-align: left;
+    }
+}
+@include tablet{
+    .beinex-banner{
+        height: 450px;
+        &__img-wrapper{
+            height: 450px;
+        }
+        .beinex-h1{
+            font-size: 36px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@include mobile{
+    .beinex-banner{
+        height: 300px;
+        &__img-wrapper{
+            height: 300px;
+        }
+    }
+}
