@@ -376,7 +376,8 @@ input[type="radio"] + label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: auto 0; }
+    margin: auto 0;
+    justify-content: center; }
   .beinex-tile-service__h1 {
     font-size: 30px;
     color: #000098;
@@ -515,8 +516,8 @@ input[type="radio"] + label {
     font-size: 14px;
     font-weight: 500; }
   .beinex-header__nav-item {
-    padding: 16px 8px;
-    margin-right: 8px;
+    padding: 8px 0;
+    margin: 0 8px;
     transition: all .3s;
     position: relative;
     cursor: pointer; }
@@ -526,7 +527,7 @@ input[type="radio"] + label {
       content: '';
       position: absolute;
       width: 100%;
-      height: 4px;
+      height: 2px;
       left: 0;
       bottom: 0;
       background-color: #25BBED;
@@ -537,7 +538,7 @@ input[type="radio"] + label {
       content: '';
       position: absolute;
       width: 100%;
-      height: 4px;
+      height: 2px;
       left: 0;
       bottom: 0;
       background-color: #25BBED;
